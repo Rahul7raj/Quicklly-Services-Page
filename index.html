@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quicklly - Services</title>
+    <meta name="description" content="Quicklly - Services">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="./assets/images/icons/gift.svg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body style="font-family: 'Poppins', system-ui;">
+    <header class="px-2 md:px-4 py-2 flex items-center justify-between w-full border-b">
+        <!-- Logo -->
+        <div class="flex items-center gap-4">
+            <img src="./assets/images/logo.png" class="w-[77px] h-[28px] md:w-[148px] md:h-[52px]" alt="logo" />
+            <!-- Shopping in Location -->
+            <div class="ml-4 hidden md:flex items-center gap-2">
+                <span class="font-medium">Shopping in</span>
+                <div class="flex items-center gap-1 bg-[#F5F5F5] p-2 rounded-md font-semibold">
+                    60016
+                    <img src="./assets/images/icons/down-arrow.svg" width="15" height="15" alt="down arrow" />
+                </div>
+            </div>
+            <div class="flex md:hidden items-center gap-1 p-2 rounded-md font-semibold">
+                <i class="fa-solid fa-location-dot"></i>
+                60016
+            </div>
+        </div>
+    
+        <!-- Search Bar -->
+        <form class="hidden md:flex items-center flex-grow max-w-xl mx-4">
+            <label for="search" class="sr-only">Search</label>
+            <div class="relative w-full">
+                <input type="text" id="search" class="bg-gray-50 text-gray-900 text-sm rounded-md pl-4 pr-10 py-2 w-full" placeholder="Search for products..." required />
+                <button type="button" class="absolute inset-y-0 right-0 flex items-center pr-3">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </form>
+    
+        <!-- Login, Signup, Cart -->
+        <div class="hidden md:flex items-center gap-4">
+            <!-- Login -->
+            <a href="#" class="flex items-center gap-2 text-gray-700">
+                <i class="fa-solid fa-user"></i>
+                <span class="font-medium">Log in</span>
+            </a>
+            <!-- Signup -->
+            <button class="bg-[#F5F5F5] px-4 py-2 rounded-md font-medium">
+                Sign up
+            </button>
+            <!-- Cart -->
+            <button class="ml-8 bg-[#53A551] text-white px-4 py-2 flex items-center gap-2 rounded-md">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart 0
+            </button>
+        </div>
+
+        <!-- Gift, User Group -->
+        <div class="flex md:hidden items-center gap-4">
+            <!-- Gift -->
+            <a href="#" class="flex items-center gap-2 text-gray-700">
+                <img src="./assets/images/icons/gift.svg" width="24" height="24" />
+            </a>
+            <!-- Group user -->
+            <a href="#" class="flex items-center gap-2 text-gray-700">
+                <img src="./assets/images/icons/group-user.svg" width="24" height="24" />
+            </a>
+        </div>
+    </header>
+    
+    <!-- Nav bar -->
+    <nav class="hidden md:flex bg-[#F9F9F9] px-4 py-2 gap-4 justify-between">
+        <div class="ml-4">
+            <i class="fa-solid fa-list"></i>
+            Shop By Department
+        </div>
+        <div class="flex gap-4 font-medium">
+            <a href="#">
+                Recipe
+            </a>
+            <a href="#">
+                Brand Ambassador
+            </a>
+            <a href="#">
+                Student Ambassador
+            </a>
+            <a href="#">
+                Gift Card
+            </a>
+            <a href="#">
+                Quicklly Pass
+            </a>
+            <a href="#">
+                Refer a Friend
+            </a>
+        </div>
+    </nav>
+
+    <!-- Services & categories -->
+    <div class="p-4 md:px-14 py-4 pt-6 bg-[#FEF6F7]">
+        <div class="flex justify-between items-center gap-2">
+        <h3 class="font-bold text-sm md:text-xl w-full">Our online Services</h3>
+            <label for="search_puja_input" class="sr-only">Search</label>
+            <div class="relative w-full md:w-[900px]">
+                <input id="search_puja_input" type="text" class="bg-white border border-gray-300 text-gray-900 text-xs md:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search for pujas..." required />
+                <button type="button" class="absolute inset-y-0 end-0 flex items-center pe-3">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </form>
+        </div>
+        <div class="py-4 flex gap-4" id="services">
+            <div class="flex p-2 gap-2 items-center rounded-md border-2 border-[#F52968] w-56 bg-white">
+                <img src="./assets/images/online-puja.jpg" width="76" height="76" class="rounded-md" />
+                <p class="text-[#F52968] font-semibold">Online Puja</p>
+            </div>
+            <div class="flex p-2 gap-2 items-center rounded-md border-[#F52968] w-56 bg-white">
+                <img src="./assets/images/astrology.png" width="76" height="76" class="rounded-md" />
+                <p class="text-black font-semibold">Astrology</p>
+            </div>
+        </div>
+        <div class="flex justify-between">
+            <h4 class="font-bold py-2 text-sm md:text-base">Explore Pujas By Category</h4>
+            <span id="view_all_category" class="flex gap-2 items-center text-[#F52968] font-medium text-sm">View All <img src="./assets/images/icons/down-arrow.svg" width="15" height="15" alt="down arrow" /></span>
+        </div>
+        <div class="flex gap-3 overflow-x-hidden relative" id="categories">
+            <div class="bg-white rounded-md flex flex-col gap-2 p-2 items-center">
+                <img src="./assets/images/icons/all-category.png" width="60" height="60" />
+                <span>All</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products -->
+    <div class="p-4 md:px-14 py-8 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-4" id="products">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 product-item">
+            <img src="./assets/images/Rati-Kamdev-puja.png" width="330" height="220" />
+            <div class="p-4 h-[154px] flex flex-col justify-between">
+                <p class="font-semibold product-name">Sindhurmani Rati Kamdev puja</p>
+                <div class="flex justify-between items-center">
+                    <span class=" font-semibold">$130 - $149</span>
+                    <button class="bg-[#F52968] text-white px-4 py-2">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#343A46] text-white pt-8 mt-4 p-1">
+        <div class="grid md:flex grid-cols-2 md:grid-cols-4 justify-center gap-4 md:gap-20">
+        <div>
+            <h3 class="text-[#BABABB] font-bold text-xs pb-2">OUR COMPANY</h3>
+            <div class="flex flex-col gap-1">
+            <a href="#"  class="text-[#BABABB] text-xs font-medium">ABOUT</a>
+            <a href="#"  class="text-[#BABABB] text-xs font-medium">CONTACT</a>
+            <a href="#"  class="text-[#BABABB] text-xs font-medium">CAREERS</a>
+            <a href="#"  class="text-[#BABABB] text-xs font-medium">FAQS</a>
+            <a href="#"  class="text-[#BABABB] text-xs font-medium">BLOGS</a>
+            <a href="#"  class="text-[#BABABB] text-xs font-medium">PRIVACY POLICY</a>
+            <a href="#"  class="text-[#BABABB] text-xs font-medium">TERMS & CONDITION</a>
+            </div>
+        </div>
+        <div>
+        <h3 class="text-[#BABABB] font-bold text-xs pb-2">FIND US ON</h3>
+            <div class="flex flex-col gap-1">
+            <a href="#"  class="text-[#BABABB] text-xs font-medium">FACEBOOK</a>
+            <a href="#"  class="text-[#BABABB] text-xs font-medium">TWITTER</a>
+            <a href="#"  class="text-[#BABABB] text-xs font-medium">LINKEDIN</a>
+            <a href="#"  class="text-[#BABABB] text-xs font-medium">YOUTUBE</a>
+            <a href="#"  class="text-[#BABABB] text-xs font-medium">INSTAGRAM</a>
+            <a href="#"  class="text-[#BABABB] text-xs font-medium">PINTEREST</a>
+            </div>
+        </div>
+        <div>
+        <h3 class="text-[#BABABB] font-bold text-xs pb-2">GET IN TOUCH WITH US</h3>
+            <div class="flex flex-col gap-1">
+            <a href="#"  class="text-[#BABABB] text-xs font-medium">PHONE SUPPORT +1(224)366-0987</a>
+            <a href="#"  class="text-[#BABABB] text-xs font-medium">GENERAL ENQUIRY</a>
+            <a href="#"  class="text-[#BABABB] text-xs font-medium">HELLO@QUICKLLY.COM</a>
+            <a href="#"  class="text-[#BABABB] text-xs font-medium">ORDER SUPPORT</a>
+            <a href="#"  class="text-[#BABABB] text-xs font-medium">ORDERSUPPORT@QUICKLLY.COM</a>
+            <a href="#"  class="text-[#BABABB] text-xs font-medium">STORES SUPPORT</a>
+            <a href="#"  class="text-[#BABABB] text-xs font-medium">NEWSTORESETUP@QUICKLLY.COM</a>
+            </div>
+        </div>
+        <div class="flex gap-4 md:gap-8 items-start">
+            <div class="flex justify-center flex-col items-center text-[#BABABB] font-medium">
+                <img src="./assets/images/icons/apple-icon.png" class="w-8 h-8 md:w-[50px] md:h-[50px]"/>
+                <p class="text-xs">Download</p>
+                 <p class="text-xs">iOS App</p>
+            </div>
+            <div class="flex justify-center flex-col items-center text-[#BABABB] font-medium">
+                <img src="./assets/images/icons/android-icon.png" class="w-8 h-8 md:w-[50px] md:h-[50px]"/>
+                <p class="text-xs">Download</p>
+                <p class="text-xs text-center">Android App</p>
+            </div>
+        </div>
+        </div>
+        <p class="text-center py-8 text-[#BABABB] text-xs font-medium">Copyright© 2021 Quicklly.com</p>
+    </footer>
+
+    <!-- Necessary Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="module" src="./assets/js/main.js" ></script>
+</body>
+</html>
