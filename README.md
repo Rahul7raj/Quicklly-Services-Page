@@ -4,8 +4,9 @@ This project involves the design and development of the Quicklly service page us
 
 ## 🚀 Demo
 
-<video controls src="assets/demo/Quicklly-desktop-demo.mp4" title="Desktop view"></video>
-<video controls src="assets/demo/Quicklly-mobile-demo.mp4" title="Mobile view"></video>
+Desktop Demo -> https://drive.google.com/file/d/1x2rp_0ddVUWGQcLYq-QdOVOugVWL5j2A/view?usp=sharing
+
+Mobile Demo -> https://drive.google.com/file/d/1XWfSWRaPPHHAXQEvl2fWBksDFkKXwqKK/view?usp=sharing
 
 ## 🛠️ Tech Stack
 
@@ -48,7 +49,7 @@ This project involves the design and development of the Quicklly service page us
     ```
 2. **Navigate to the project directory:**
     ```bash
-    cd quicklly-service-page
+    cd Quicklly-Service-Page
     ```
 3. **Set up the backend:**
    - Make sure you have a PHP server running (e.g., XAMPP, WAMP).
@@ -57,6 +58,7 @@ This project involves the design and development of the Quicklly service page us
 4. **Import the Database:**
    - Create a MySQL database.
    - Import the SQL file provided in the `main project` folder.
+   - Modify the connection variables if needed in `core/database.php` file
 
 5. **Run the Project:**
    - Open the project in the browser:
@@ -77,8 +79,9 @@ This project involves the design and development of the Quicklly service page us
 ![Mobile View](assets/demo/mobile.png)
 
 ### Recording
-<video controls src="assets/demo/Quicklly-desktop-demo.mp4" title="Desktop View"></video>
-<video controls src="assets/demo/Quicklly-mobile-demo.mp4" title="Mobile View"></video>
+Desktop Demo -> https://drive.google.com/file/d/1x2rp_0ddVUWGQcLYq-QdOVOugVWL5j2A/view?usp=sharing
+
+Mobile Demo -> https://drive.google.com/file/d/1XWfSWRaPPHHAXQEvl2fWBksDFkKXwqKK/view?usp=sharing
 
 ## 👤 Author
 
